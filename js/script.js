@@ -1,6 +1,7 @@
 const form = document.querySelector('form');
 const input_file = document.querySelector('#profil');
 const prev_box = document.querySelector('#prev_box');
+var link = document.querySelector('#link');
 let base64 = '';
 
 form.addEventListener('submit',handlerForm)
@@ -57,6 +58,10 @@ function show_user(){
     container_list.innerHTML = list_contact_html;
 }
 
+button = document.querySelector('#link');
+
+
+ 
 
 function user_template(user,index){
    return ` <div class="contenue" id="contact_${index}">
@@ -65,10 +70,14 @@ function user_template(user,index){
         </div>
         <div class="cont">
             <p id="nm">${user.nom}</p>
-            <p id="pst">>${user.prenom}</p>
-            <p id="biot">>${user.bio}</p>
+            <p id="pst">${user.prenom}</p>
+            <p id="biot">${user.bio}</p>
         </div>
-        <div class="gauche"></div>
+        <div class="gauche">
+            <button id="link">supprimer </button>
+            <a href="#">editer</a>
+        </div>
     </div>
     `
 }
+

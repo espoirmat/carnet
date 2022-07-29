@@ -229,12 +229,6 @@ input[type="submit"]:hover
    
 }
 
-.block .block_text .contenue .gauche
-{
-    width: 25%;
-    height: 100px;
-   
-}
 
 .block .block_text .container_list-contact{
     width: 80%;
@@ -259,8 +253,23 @@ input[type="submit"]:hover
     text-align: center;
 }
 
-.block .block_text .container_list-contact .contenue .cont .nm
+
+
+
+.block .block_text .container_list-contact .gauche
 {
-    font-size: 2rem;
-    font-weight: bolder;
+    width: 25%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.block .block_text .container_list-contact .gauche .a 
+{
+    width: 50%;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
 }
